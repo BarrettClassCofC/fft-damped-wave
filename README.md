@@ -50,7 +50,7 @@ $$
 4. Compute the error in $q(1)$ using $\Delta t=1/5,\ 1/10,\ 1/20,\ 1/40,$ and $1/80$. Plot the error against $\Delta t$ on a log-log scale. Estimate the observed order using
 
 $$
-p=\log_2\!\left(\frac{E_{\Delta t}}{E_{\Delta t/2}}\right).
+p=\log_2 \left(\frac{E_{\Delta t}}{E_{\Delta t/2}}\right).
 $$
 
    Does your implementation exhibit fourth-order convergence?
