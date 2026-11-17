@@ -147,7 +147,7 @@ $$
    In particular, for your analysis, use spatial frequencies $1$, $4$, and $8$. Use the normalized Fourier coefficients from your solver to track these modes separately. For these sine-wave data, the signed amplitude of mode $k$ is
 
 $$
-A_k(t)=-2\operatorname{Im}(a_k(t)).
+A_k(t)=-2\mathrm{Im}(a_k(t)).
 $$
 
    Here $a_k$ means the coefficient for signed frequency $k$, not array entry $k$. Plot $A_1(t)$, $A_4(t)$, and $A_8(t)$ in separate panels, each with its own vertical scale so that the smaller amplitudes remain visible.
@@ -157,7 +157,10 @@ $$
    For each trial damping coefficient $\alpha$, run your PDE solver to $T=60$ and compute
 
 $$
-M(\alpha)=\max_{\substack{0\leq t_n\leq60\\0\leq j \lt N}}|p_N(x_j,t_n;\alpha)|,
+M(\alpha)=\max\limits_{\begin{array}{c}
+0\leq t_n\leq60 \\
+0\leq j\lt N
+\end{array}}|p_N(x_j,t_n;\alpha)|,
 \qquad F(\alpha)=M(\alpha)-2,
 $$
 
